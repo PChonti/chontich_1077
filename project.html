@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Chonticha Tuntimayteevanitch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- แถบเมนูด้านบน -->
+  <header class="navbar">
+    <div class="logo">CT<span>.</span></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">หน้าแรก</a>
+      <a href="project.html" class="active">ผลงานโปรเจกต์</a>
+      <a href="index.html#assignments">การบ้านในห้องเรียน</a>
+      <a href="index.html#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <span class="badge">ผลงานและการพัฒนา</span>
+      <h1>Selected Projects</h1>
+      <p>โปรเจกต์ที่เคยทำและไอเดียโครงงานที่พัฒนาต่อยอด</p>
+    </section>
+
+    <section class="section-container">
+      <div class="project-list">
+
+        <!-- โปรเจกต์ที่ 1: Smart Room Simulator (ใส่รูปภาพจริง) -->
+        <article class="project-item">
+          <div class="project-info">
+            <span class="proj-category">INTERACTIVE / IOT SIMULATION</span>
+            <h2>Smart Room Simulator</h2>
+            <p>แนวคิดห้องจำลองอัจฉริยะ (Interactive Space) ที่จำลองการปรับเปลี่ยนสภาพแวดล้อม เช่น อุณหภูมิ และแสงไฟแบบ Real-time เพื่อตอบสนองต่อผู้ใช้งาน</p>
+            <div class="tech-tags">
+              <span>UI/UX Design</span>
+              <span>Interactive Space</span>
+              <span>Simulation</span>
+            </div>
+            <p class="proj-status"><strong>สถานะ:</strong> อยู่ในขั้นตอนการออกแบบ Concept</p>
+          </div>
+          <div class="project-visual bg-gradient-2">
+            <!-- ใส่รูปภาพ Smart Room ตรงนี้ (ตั้งชื่อรูปว่า smart-room.png หรือ .jpg) -->
+            <img src="smart-room.png" alt="Smart Room Simulator" class="project-img">
+          </div>
+        </article>
+
+        <!-- โปรเจกต์ที่ 2: Future Sea 2100 (เกมอนุรักษ์ท้องทะเล) -->
+        <article class="project-item reverse">
+          <div class="project-info">
+            <span class="proj-category">GAME JAM / HARDWARE INTERACTION</span>
+            <h2>Future Sea 2100</h2>
+            <p>ผลงานการแข่งขัน Hackathon KMUTT Deep Sea Jam โดยทีม "จุ๊บุ" เกมอนุรักษ์ท้องทะเลลึกในโลกอนาคต เชื่อมต่อการควบคุมการเล่นผ่านปุ่มกดฮาร์ดแวร์จริงร่วมกับบอร์ดไมโครคอนโทรลเลอร์</p>
+            <div class="tech-tags">
+              <span>Game Jam</span>
+              <span>Microcontroller</span>
+              <span>Hardware Interaction</span>
+              <span>Deep Sea</span>
+            </div>
+            <p class="proj-status"><strong>สถานะ:</strong> แข่งขันและพัฒนาเสร็จสมบูรณ์</p>
+          </div>
+          <div class="project-visual bg-ocean">
+            <!-- รูปภาพ Future Sea 2100 -->
+            <img src="future-sea.png" alt="Future Sea 2100 Gameplay" class="project-img">
+          </div>
+        </article>
+
+      </div>
+
+      <div class="back-home-wrap">
+        <a href="index.html" class="btn btn-primary">← กลับไปยังหน้าหลัก (Home)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Chonticha Tuntimayteevanitch. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

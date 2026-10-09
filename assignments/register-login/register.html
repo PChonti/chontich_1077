@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<script type="text/javascript" src="register.js"></script>
+		<style>
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 100%);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				margin: 0;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			form {
+				width: 100%;
+				max-width: 480px;
+			}
+			fieldset {
+				background: #ffffff;
+				border: none;
+				border-radius: 16px;
+				padding: 30px;
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+				line-height: 1.8;
+				color: #334155;
+			}
+			legend {
+    		font-size: 24px;
+    		font-weight: 700;
+    		color: #4f46e5;
+    		padding: 0 10px;
+   			margin: 0 auto;       
+    		text-align: center;   
+			}
+			span {
+				font-size: 13px;
+				color: #64748b;
+			}
+			#errormsg {
+				display: block;
+				font-weight: 600;
+				min-height: 20px;
+				margin: 4px 0 10px;
+			}
+			input[type="text"],
+			input[type="email"],
+			input[type="password"],
+			input[type="date"] {
+				width: 100%;
+				padding: 10px 12px;
+				margin: 6px 0 14px 0;
+				border: 1.5px solid #cbd5e1;
+				border-radius: 8px;
+				box-sizing: border-box;
+				font-size: 14px;
+				transition: border-color 0.2s, box-shadow 0.2s;
+			}
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+			input[type="password"]:focus,
+			input[type="date"]:focus {
+				border-color: #6366f1;
+				outline: none;
+				box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+			}
+			input[type="radio"] {
+				margin-right: 4px;
+				margin-left: 8px;
+				accent-color: #4f46e5;
+			}
+			input[type="submit"],
+			input[type="reset"] {
+				padding: 10px 20px;
+				border: none;
+				border-radius: 8px;
+				font-size: 14px;
+				font-weight: 600;
+				cursor: pointer;
+				margin-top: 15px;
+				transition: background-color 0.2s, transform 0.1s;
+			}
+			input[type="submit"] {
+				background-color: #4f46e5;
+				color: #ffffff;
+			}
+			input[type="submit"]:hover {
+				background-color: #4338ca;
+			}
+			input[type="reset"] {
+				background-color: #f1f5f9;
+				color: #475569;
+				margin-left: 8px;
+			}
+			input[type="reset"]:hover {
+				background-color: #e2e8f0;
+			}
+			input[type="submit"]:active,
+			input[type="reset"]:active {
+				transform: scale(0.98);
+			}
+		</style>
+	</head>
+	<body>
+		<form name="myRegister" id="myRegister" action="login.html">
+			<fieldset>
+				<legend>Register</legend>
+				<span>* require</span> <br>
+				<span id="errormsg"></span> <br>
+				First name*: 
+				<input type="text" name="firstname" required>
+				Last name*: 
+				<input type="text" name="lastname" >
+				<br>
+				Gender*: 
+				<input type="radio" name="gender" value="male" >Male
+				<input type="radio" name="gender" value="female" >Female
+				<input type="radio" name="gender" value="other" >Other
+				<br>
+				Birthday*: 
+				<input type="date" name="bday" value="" >
+				<br>
+				Email address*: 
+				<input type="email" name="email" >
+				<br>
+				Username*: 
+				<input type="text" name="username" >
+				<br>
+				Password*: 
+				<input type="password" name="password" required>
+				<br>
+				Retype Password*: 
+				<input type="password" name="password" required>
+				<br>
+				<input type="submit" value="Register" id="registerBtn">
+				<input type="reset" value="Reset" id="resetBtn">
+			</fieldset>
+			<p class="switch-link">
+    มีบัญชีผู้ใช้อยู่แล้ว? <a href="login.html">เข้าสู่ระบบที่นี่</a>
+</p>ป
+		</form>
+
+		
+	</body>
+</html>

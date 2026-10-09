@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Chonticha Tuntimayteevanitch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- แถบเมนูด้านบน -->
+  <header class="navbar">
+    <div class="logo">CT<span>.</span></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">หน้าแรก</a>
+      <a href="project.html">ผลงานโปรเจกต์</a>
+      <a href="#about">เกี่ยวกับฉัน</a>
+      <a href="#assignments">การบ้านในห้องเรียน</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ส่วนแนะนำตัว (Hero) มีรูปในวงกลมทางขวา -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="badge">Portfolio</span>
+        <h1>CHONTICHA<br><span>TUNTIMAYTEEVANITCH</span></h1>
+        <div class="hero-buttons">
+          <a href="project.html" class="btn btn-primary">ดูผลงานโปรเจกต์ ↗</a>
+          <a href="#assignments" class="btn btn-secondary">ดูการบ้านในห้องเรียน ↓</a>
+        </div>
+      </div>
+      <div class="hero-image-box">
+        <div class="profile-card">
+          <!-- รูปภาพแสดงในช่องวงกลม -->
+          <img src="profile.jpg" alt="Chonticha Tuntimayteevanitch" class="profile-img">
+          <p class="card-name">Chonticha Tuntimayteevanitch</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ข้อมูลส่วนตัว: งานอดิเรก ทักษะ ความสนใจ -->
+    <section class="section-container" id="about">
+      <h2 class="section-title">เกี่ยวกับฉัน <span>(About Me)</span></h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="icon">🎮</div>
+          <h3>งานอดิเรก (Hobbies)</h3>
+          <p>ชอบเล่นเกมแนววางแผนและผจญภัย เพื่อศึกษาการออกแบบเกมเพลย์ และชอบวาดรูปสเก็ตช์ภาพกราฟิก</p>
+        </div>
+        <div class="about-card">
+          <div class="icon">⚡</div>
+          <h3>ทักษะความสามารถ (Skills)</h3>
+          <p>พื้นฐานการสร้างเกมด้วย Unity (C#), ออกแบบและพัฒนาเว็บไซต์ด้วย HTML5, CSS3, Responsive Design และ JavaScript</p>
+        </div>
+        <div class="about-card">
+          <div class="icon">💡</div>
+          <h3>ความสนใจ (Interests)</h3>
+          <p>สนใจเทคโนโลยี Interactive Media, งานด้าน Game Concept Design, UI/UX Design และการสร้างเว็บแอปพลิเคชัน</p>
+        </div>
+      </div>
+    </section>
+
+<!-- ลิงก์ไปยัง Assignment ทั้ง 5 งานตามที่อาจารย์กำหนด -->
+    <section class="section-container" id="assignments">
+      <h2 class="section-title">การบ้านในห้องเรียน <span>(Assignments)</span></h2>
+      <p class="section-desc">รวบรวมงานฝึกปฏิบัติและ Mini Projects ที่ได้พัฒนาในรายวิชา</p>
+      
+      <div class="assignments-grid">
+        <!-- งานที่ 1: Cinnamon Roll Wreath with Apples -->
+        <a href="assignments/cinnamon-roll-wreath/index.html" class="assign-card">          
+          <span class="assign-tag">Week 1-2</span>
+          <h3>Cinnamon Roll Wreath with Apples</h3>
+          <p>หน้าเว็บสูตรขนม ออกแบบโครงสร้าง HTML และจัดรูปแบบด้วย CSS</p>
+          <span class="view-link">เปิดดูหน้าเว็บ →</span>
+        </a>
+
+        <!-- งานที่ 2: Pizza Dip (ถ้าในเครื่องชื่อ recipe.html ให้ชี้ไปที่ recipe.html) -->
+        <a href="assignments/pizza-dip/recipe.html" class="assign-card">
+          <span class="assign-tag">Week 2-4</span>
+          <h3>Pizza Dip</h3>
+          <p>หน้าเว็บสูตรอาหาร ฝึกฝนการจัด Layout ขั้นสูง และ Responsive Web</p>
+          <span class="view-link">เปิดดูหน้าเว็บ →</span>
+        </a>
+
+        <!-- งานที่ 3: Blog -->
+        <a href="assignments/blog/index.html" class="assign-card">
+          <span class="assign-tag">Week 3-4</span>
+          <h3>Blog</h3>
+          <p>การออกแบบและจัดหน้าบทความบล็อกส่วนตัวอย่างสวยงาม</p>
+          <span class="view-link">เปิดดูหน้าเว็บ →</span>
+        </a>
+
+        <!-- งานที่ 4: Register and Login (ชี้ไปที่ register.html) -->
+        <a href="assignments/register-login/register.html" class="assign-card">
+          <span class="assign-tag">Week 6</span>
+          <h3>Register and Login</h3>
+          <p>ระบบลงทะเบียนและเข้าสู่ระบบด้วย JavaScript Form Validation และ LocalStorage</p>
+          <span class="view-link">เปิดดูหน้าเว็บ →</span>
+        </a>
+
+        <!-- งานที่ 5: Square Game -->
+        <a href="assignments/square-game/index.html" class="assign-card">
+          <span class="assign-tag">Week 7</span>
+          <h3>Square Game</h3>
+          <p>มินิเกมคลิกลบกล่องสี่เหลี่ยมตามเวลาที่กำหนดด้วย JavaScript DOM และ Timers</p>
+          <span class="view-link">เปิดดูหน้าเว็บ →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ลิงก์ติดต่อ / Social Media -->
+    <section class="section-container" id="contact">
+      <h2 class="section-title">ช่องทางติดต่อ <span>(Contact)</span></h2>
+      <div class="contact-box">
+        <p>สามารถติดตามหรือติดต่อสอบถามข้อมูลเพิ่มเติมได้ทาง Social Media</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/lppangql?cplk=MXFqYnBvNWswMHVkeQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn">
+            Instagram: @lppangql ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Chonticha Tuntimayteevanitch. All rights reserved.</p>
+    <p class="credits">References: ฟอนต์ Manrope & Noto Sans Thai จาก Google Fonts</p>
+  </footer>
+
+</body>
+</html>

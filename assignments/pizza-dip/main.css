@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121316;
+    color: #e5e7eb;
+    line-height: 1.6;
+    padding: 2% 0;
+}
+
+/* ========================================================
+   Desktop Grid Layout (3 คอลัมน์)
+   ======================================================== */
+.grid-container {
+    display: grid;
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 28% auto 28%;
+    gap: 24px;
+}
+
+.grid-container.single-page {
+    grid-template-columns: 100%;
+    max-width: 900px;
+}
+
+.grid-container > div {
+    background-color: #1a1c22;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid #2a2e39;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------- HEADER & NAVBAR ---------------- */
+#header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1f222b 0%, #16181f 100%);
+    border-left: 6px solid #e76f51;
+    padding: 24px 32px;
+}
+
+.brand .tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e76f51;
+}
+
+#header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+.bistro-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-chip {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 30px;
+    background-color: #262a36;
+    border: 1px solid #373e50;
+    transition: all 0.25s ease;
+}
+
+.nav-chip:hover,
+.nav-chip.active {
+    background-color: #e76f51;
+    color: #ffffff;
+    border-color: #e76f51;
+}
+
+/* ---------------- TITLES & BLOCKS ---------------- */
+.section-title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a2e39;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    color: #e76f51;
+}
+
+/* ---------------- LEFT: Ingredients ---------------- */
+#main1 {
+    grid-column: 1 / span 1;
+}
+
+.media-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #2a2e39;
+}
+
+.spec-block {
+    background-color: #14161c;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-left: 3px solid #e76f51;
+}
+
+.spec-block h3 {
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f4a261;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 16px;
+}
+
+ul li::before {
+    content: "▫";
+    position: absolute;
+    left: 0;
+    color: #e76f51;
+}
+
+/* ---------------- CENTER: Method ---------------- */
+#main2 {
+    grid-column: 2 / span 1;
+}
+
+.step-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: #14161c;
+    border: 1px solid #242834;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.step-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 1;
+}
+
+.step-badge {
+    background-color: #262a36;
+    color: #e76f51;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #373e50;
+}
+
+.step-info p {
+    font-size: 0.88rem;
+    color: #d1d5db;
+}
+
+.step-thumb {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #373e50;
+    flex-shrink: 0;
+}
+
+/* ---------------- RIGHT: The Showcase ---------------- */
+#right {
+    grid-column: 3 / span 1;
+}
+
+.showcase-card {
+    background-color: #14161c;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    border: 1px solid #2a2e39;
+}
+
+.showcase-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.showcase-label {
+    padding: 14px;
+}
+
+.showcase-label h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    color: #f4a261;
+    margin-bottom: 4px;
+}
+
+.showcase-label p {
+    font-size: 0.78rem;
+    color: #9ca3af;
+}
+
+.full-content {
+    grid-column: 1 / -1 !important;
+}
+
+/* ---------------- FOOTER ---------------- */
+#footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.82rem;
+    color: #6b7280;
+}
+
+#footer a {
+    color: #e76f51;
+    text-decoration: none;
+}
+
+/* ========================================================
+   Tablet View (max-width: 768px)
+   ======================================================== */
+@media only screen and (max-width: 768px) {
+	.grid-container {
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        gap: 16px;
+	}
+
+	#header {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+	}
+
+    #main1 {
+        grid-column: 1 / span 1;
+    }
+
+    #right {
+        grid-column: 2 / span 1;
+    }
+
+    #main2 {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* ========================================================
+   Mobile View (max-width: 480px)
+   ======================================================== */
+@media only screen and (max-width: 480px) {
+	.grid-container {
+        width: 100%;
+        grid-template-columns: 100%;
+        gap: 14px;
+        padding: 0 10px;
+	}
+
+	#header,
+    #main1,
+    #main2,
+    #right,
+    #footer {
+        grid-column: 1 / span 1;
+	}
+
+    .bistro-nav {
+        justify-content: center;
+    }
+
+    .step-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-thumb {
+        width: 100%;
+        height: 160px;
+    }
+}
